@@ -37,9 +37,10 @@ project:  # https://mystmd.org/guide/frontmatter
 site:
   template: book-theme
   title: WritingExample
-  # options:
+  options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
+    baseUrl: https://openscienceteam.github.io/OpenScience/
   nav: []
   actions:
     - title: Learn More
