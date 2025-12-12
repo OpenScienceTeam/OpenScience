@@ -3,10 +3,9 @@ kernelspec:
   name: jupyterbook
   display_name: 'jupyterbook'
 
-title: "第二章：MOF 吸附与模拟（进阶)!!"
+title: "第二章：MOF 吸附与模拟（进阶)"
 ---
 
-# 第二章：MOF 吸附与模拟（进阶）
 
 ## 2.1 吸附等温线基础
 
@@ -31,18 +30,28 @@ $$
 ## 2.2 交互式曲线（使用 ipywidgets）
 
 下面示例展示如何在书中嵌入交互式控件（在支持的小环境中会成为交互式图像）。
-
 :::{code-cell} python
----
-:tags: [interactive]
----
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-try:
-    from ipywidgets import interact, FloatSlider
-except ImportError:
-    interact = None
+phi = np.linspace(0.1, 0.9, 9)
+sa = 1500 * phi * 2
+
+plt.figure(figsize=(6,4))
+plt.plot(phi, sa, marker="o")
+plt.xlabel("Porosity φ")
+plt.ylabel("Surface Area (m²/g)")
+plt.title("MOF Porosity vs Surface Area (illustration)")
+plt.grid(True)
+plt.show()
+:::
+
+
+:::{code-cell} python
+
+import numpy as np
+import matplotlib.pyplot as plt
 
 def langmuir_isotherm(P, qmax, b):
     return qmax * b * P / (1 + b * P)
@@ -58,16 +67,12 @@ def plot_langmuir(qmax=5.0, b=1.0):
     plt.grid(True)
     plt.show()
 
-if interact is not None:
-    interact(
-        plot_langmuir,
-        qmax=FloatSlider(min=1, max=10, step=0.5, value=5),
-        b=FloatSlider(min=0.1, max=5, step=0.1, value=1),
-    )
-else:
-    # 如果没有 ipywidgets，就画一张默认图
-    plot_langmuir()
+plot_langmuir()
+print('here')
 :::
+
+
+
 
 :::{note}
 要真正看到交互效果，需要在支持小部件渲染的环境中（例如 JupyterLab 或某些在线部署）。
@@ -205,13 +210,3 @@ for step in range(10):
 
 ⸻
 
-## 2.7 小结
-
-本章通过 交互式曲线、动画、Tabs、下拉内容、进阶代码示例 等，展示了如何在 Jupyter Book 中构建一个较为丰富的 MOF 进阶章节。
-
-:::{admonition} 练习
-尝试：
-1. 将本章中的 Langmuir 等温线换成 Freundlich 或 Sips 模型；
-2. 将动画改为 3D 轨迹；
-3. 将 GCMC 伪代码替换为真正的能量评价（如 Lennard-Jones 势）。
-:::

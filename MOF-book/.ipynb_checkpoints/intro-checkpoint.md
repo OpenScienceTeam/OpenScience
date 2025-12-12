@@ -1,7 +1,11 @@
+---
+title: Writing Template
+---
+
+
 # 欢迎进入 MOF 学习手册
 
-这是一本使用 **Jupyter Book + MyST Markdown** 编写的示例手册，主题为  
-**MOF（金属有机骨架，Metal–Organic Frameworks）**。
+这是一本使用 **Jupyter Book + MyST Markdown** 编写的示例手册，主题为 **MOF（金属有机骨架，Metal–Organic Frameworks）**。
 
 本手册主要演示：
 

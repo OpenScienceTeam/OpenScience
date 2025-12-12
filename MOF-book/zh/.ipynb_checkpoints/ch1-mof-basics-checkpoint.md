@@ -4,19 +4,11 @@ kernelspec:
   display_name: 'jupyterbook'
 ---
 
-
 # 第一章：MOF 基础概念与结构
 
 ## 1.1 什么是 MOF？
 
 金属有机骨架（Metal–Organic Framework, MOF）是一类由**金属节点**和**有机配体**组成的多孔晶体材料。
-
-
-```
-:::{tip} MOF 的历史
-MOF 领域的爆炸式增长始于 1990 年代末，Omar Yaghi 教授在这一领域做出了开创性的贡献。
-:::
-```
 
 :::{tip} MOF 的历史
 MOF 领域的爆炸式增长始于 1990 年代末，Omar Yaghi 教授在这一领域做出了开创性的贡献。
@@ -30,36 +22,35 @@ MOF 领域的爆炸式增长始于 1990 年代末，Omar Yaghi 教授在这一�
 可以把 MOF 想象成「金属原子是节点、有机分子是杆件」的三维骨架结构。
 :::
 
-:class: tip
-MOF 材料最大的特点是其**超高的比表面积**和**可调控的孔径结构**。你可以把它们想象成纳米级别的乐高积木。
+
+> MOF 材料最大的特点是其**超高的比表面积**和**可调控的孔径结构**。你可以把它们想象成纳米级别的乐高积木。
 
 
+如文献 [Yaghi, 2025](https://doi.org/10.1038/s41578-025-00772-8) 所示[^1]
 
+[^1]: This is a review about AI for MOFs.
 
+---
+
+(target-struct)=
 ## 1.2 典型结构示意与晶胞
+
 
 ### 1.2.1 结构示意图片
 
-下面示例如何插入图片（示意图可用你自己的 PNG/SVG 文件替换）。
-
-```{figure} images/mof-schematic.png
+:::{figure} ../images/Figure-1.png
 :name: fig-mof-schematic
 :width: 60%
 :align: center
-```
+一个 MOF 结构示意图。
+:::
 
-一个简化的 MOF 结构示意图：金属节点（蓝色球）与有机配体（灰色杆）连接形成三维骨架。
-
-如果暂时没有图片，你也可以先用占位说明：
-
-这里本来应该有一张 MOF 结构示意图：**`images/mof-schematic.png`**。
-你可以之后替换为自己的结构渲染图片，例如由 VESTA 或 pymatgen 生成。
+以及一个来源于wiki的MOF图片。
 
 :::{figure}https://upload.wikimedia.org/wikipedia/commons/1/1d/MIL101_synthesis.png
-:name: fig-mof-schematic
+:name: fig-mof-schematic-2
 :width: 60%
 :align: center
-
 MOF-5 的晶体结构示意图（图片来源：Wikimedia Commons）。它由 $Zn_4O$ 簇和对苯二甲酸配体组成。
 :::
 
@@ -87,8 +78,9 @@ $$
 为什么 MOF 通常具有比传统多孔材料（如活性炭、硅胶）更高的可设计性？
 :::
 
-## 1.4 表格示例：一些常见 MOF
+## 1.4 表格：一些常见 MOF
 
+:::{table}
 :name: tab-common-mofs
 :align: center
 
@@ -98,6 +90,7 @@ $$
 | UiO-66     | Zr⁴⁺      | BDC                          | 热/化学稳定性好              |
 | HKUST-1    | Cu²⁺      | 1,3,5-苯三甲酸 (BTC)        | 经典铜基 MOF                  |
 | MIL-101(Cr)| Cr³⁺      | BDC                          | 超大孔体积, 良好水稳定性     |
+:::
 
 ## 1.5 代码块示例（静态）
 
@@ -156,7 +149,19 @@ plt.grid(True)
 plt.show()
 :::
 
-1.8 练习区（task list）
-	•	手动计算一个简单 MOF 的孔隙率
-	•	查找你感兴趣的一个 MOF 的结构信息
-	•	使用 pymatgen 或 ASE 载入 CIF 文件尝试可视化
+## 1.8 练习区（task list）
+
+:::{exercise}
+:lable: ch1-e1
+- 手动计算一个简单 MOF 的孔隙率
+:::
+
+:::{exercise}
+:lable: ch1-e2
+- 查找你感兴趣的一个 MOF 的结构信息
+:::
+
+:::{exercise}
+:lable: ch1-e3
+- 使用 pymatgen 或 ASE 载入 CIF 文件尝试可视化
+:::
