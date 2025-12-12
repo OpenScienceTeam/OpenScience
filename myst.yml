@@ -36,7 +36,7 @@ project:  # https://mystmd.org/guide/frontmatter
 # template information about the website
 site:
   template: book-theme
-  title: WritingExample
+  title: Authoring Guide
   options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
