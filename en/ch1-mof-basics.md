@@ -147,7 +147,23 @@ plt.grid(True)
 plt.show()
 :::
 
-## 1.8 Exercise Zone (task list)
+## 1.8 An interactive MOF structure
+
+:::{code-cell} python
+:tags: [hide-input]
+from ase.io import read
+from ase.visualize import view
+
+# Read structure from a local file, e.g. CIF/PDB
+mof_from_file = read("../data/MOF-5.pdb")
+
+# View the periodic structure
+disp_mof=view(mof_from_file, viewer='x3d')
+display(disp_mof)
+
+:::
+
+## 1.9 Exercise Zone (task list)
 
 :::{exercise} 1. calculate the porosity
 - Manually calculate the porosity of a simple MOF.
