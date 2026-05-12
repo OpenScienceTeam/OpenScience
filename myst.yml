@@ -59,6 +59,8 @@ site:
         url: https://openscienceteam.github.io/General-Chemistry/
       - title: Generative Models for Materials Science
         url: https://openscienceteam.github.io/aiforscience/
+      - title: Electrochemical
+        url: https://openscienceteam.github.io/electrochemical/
     - title: About
       url: /about
   actions:

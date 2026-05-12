@@ -78,6 +78,15 @@ Contribute knowledge, tools, and review. Build for science.
 :::
 ::::
 
+::::{card}
+:url: https://openscienceteam.github.io/electrochemistry/
+:footer: Generative Models for Materials Science
+
+:::{image} ./images/books/Electrochemical.png
+:height: 100px
+:::
+::::
+
 :::::
 
 
