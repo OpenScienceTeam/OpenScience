@@ -1,1 +1,1 @@
-This is a *primary-sidebar-footer*.
+*Open-science*.

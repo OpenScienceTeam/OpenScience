@@ -1,1 +1,1 @@
-This is a new *footer*.
+*Open-science project* 2026, open to everyone in the AI era.
