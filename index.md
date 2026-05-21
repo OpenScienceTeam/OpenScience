@@ -61,6 +61,15 @@ Contribute knowledge, tools, and review. Build for science.
 ## Our projects
 :::::{grid} 1 2 2 2
 ::::{card}
+:url: https://openscienceteam.github.io/OpenScience/intro
+:footer: Writinge Info & Guide
+
+:::{image} ./images/books/MOF.png
+:height: 100px
+:::
+::::
+
+::::{card}
 :url: https://openscienceteam.github.io/General-Chemistry/
 :footer: General Chemistry
 
