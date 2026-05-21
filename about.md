@@ -75,9 +75,19 @@ UC Berkeley
 Benkai Li
 :::
 
+:::{figure} ./images/team/JoinUs.png
+:height: 150px
+Join us!
+:::
+
 ::::
 
 ### Scientific Advisory Board
+:::{figure} ./images/team/JoinUs.png
+:height: 150px
+Join us!
+:::
+
 
 ### Tech Board
 ::::{grid} 4
@@ -94,9 +104,14 @@ UC Berkeley
 Benkai Li
 :::
 
+:::{figure} ./images/team/JoinUs.png
+:height: 150px
+Join us!
+:::
+
 ::::
 
-### Supporting/Collaborating Organizations
+### Supportors and Collaborators from Organizations:
 
 +++ {"class": "image-grid"}
 :::{figure} ./images/org/Berkeley.png
