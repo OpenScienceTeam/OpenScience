@@ -96,6 +96,15 @@ Contribute knowledge, tools, and review. Build for science.
 :::
 ::::
 
+::::{card}
+:url: https://openscienceteam.github.io/Quantum-Mechanics/
+:footer: Quantum Mechanics
+
+:::{image} ./images/books/Quantum-Mechanics.png
+:height: 100px
+:::
+::::
+
 :::::
 
 
