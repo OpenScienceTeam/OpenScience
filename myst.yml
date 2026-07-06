@@ -61,6 +61,8 @@ site:
         url: https://openscienceteam.github.io/aiforscience/
       - title: Electrochemistry
         url: https://openscienceteam.github.io/electrochemical/
+      - title: Quantum Mechanics
+        url: https://openscienceteam.github.io/Quantum-Mechanics/
     - title: About
       url: /about
   actions:
